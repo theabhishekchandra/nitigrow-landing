@@ -1,0 +1,10 @@
+# NitiGrow — landing site robots.txt
+# All crawlers welcome. Real product surfaces (app.nitigrow.in, admin.nitigrow.in,
+# api.nitigrow.in) are blocked from indexing at the application level via
+# X-Robots-Tag headers / their own robots.txt files.
+
+User-agent: *
+Allow: /
+Disallow: /og-template.html
+
+Sitemap: https://nitigrow.in/sitemap.xml

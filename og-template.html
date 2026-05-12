@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<!--
+  Source HTML for landing/og.png. Render to PNG with:
+    "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" \
+      --headless --disable-gpu --hide-scrollbars \
+      --window-size=1200,630 --screenshot=og.png \
+      file:///absolute/path/to/og-template.html
+  Designed at 1200×630 (Open Graph standard, 1.91:1 aspect).
+  Uses system fonts only so the render is deterministic without web-font fetches.
+-->
+<head>
+<meta charset="UTF-8" />
+<style>
+  :root {
+    --paper: #FBF8F3;
+    --paper-2: #F5EFDF;
+    --ink: #1F1A14;
+    --muted: #6B5F4F;
+    --viridian: #0F7F5E;
+    --terracotta: #C55A2B;
+    --turmeric: #E8A94A;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    width: 1200px; height: 630px;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    position: relative;
+    overflow: hidden;
+  }
+  .bg-grain {
+    position: absolute; inset: 0;
+    background:
+      radial-gradient(ellipse 800px 400px at 85% -10%, rgba(232,169,74,0.18), transparent 60%),
+      radial-gradient(ellipse 600px 400px at -5% 110%, rgba(15,127,94,0.10), transparent 60%);
+  }
+  .container {
+    position: absolute; inset: 0;
+    padding: 60px 70px;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+  }
+  .top {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .brand {
+    display: flex; align-items: center; gap: 14px;
+  }
+  .logo-mark {
+    width: 48px; height: 48px;
+    background: var(--viridian);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    box-shadow: 0 4px 14px rgba(15,127,94,0.30);
+  }
+  .logo-text {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--ink);
+    letter-spacing: -0.01em;
+  }
+  .logo-eyebrow {
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    margin-top: 2px;
+    font-weight: 600;
+  }
+  .ardym-tag {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 7px 14px;
+    border: 1px solid rgba(31,26,20,0.15);
+    border-radius: 99px;
+  }
+  .middle { display: flex; flex-direction: column; gap: 18px; max-width: 920px; }
+  .eyebrow {
+    color: var(--terracotta);
+    font-size: 14px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h1 {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 76px;
+    line-height: 1.04;
+    letter-spacing: -0.025em;
+    font-weight: 500;
+    color: var(--ink);
+  }
+  h1 em {
+    font-style: italic;
+    color: var(--viridian);
+  }
+  .sub {
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--muted);
+    max-width: 760px;
+  }
+  .bottom {
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .features {
+    display: flex; gap: 22px;
+    font-size: 15px;
+    color: var(--ink);
+    font-weight: 500;
+  }
+  .feature {
+    display: flex; align-items: center; gap: 8px;
+  }
+  .feature-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--viridian);
+  }
+  .feature:nth-child(2) .feature-dot { background: var(--terracotta); }
+  .feature:nth-child(3) .feature-dot { background: var(--turmeric); }
+  .url {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--viridian);
+    letter-spacing: -0.005em;
+  }
+  .stamp {
+    position: absolute;
+    right: -40px; top: 220px;
+    width: 320px; height: 320px;
+    border: 2px solid rgba(15,127,94,0.10);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    transform: rotate(-12deg);
+  }
+  .stamp::after {
+    content: "";
+    position: absolute; inset: 30px;
+    border: 1px dashed rgba(15,127,94,0.12);
+    border-radius: 50%;
+  }
+  .stamp-text {
+    font-family: Georgia, serif;
+    font-size: 84px;
+    color: rgba(15,127,94,0.10);
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    transform: rotate(12deg);
+  }
+</style>
+</head>
+<body>
+  <div class="bg-grain"></div>
+
+  <div class="stamp"><span class="stamp-text">व्यापार</span></div>
+
+  <div class="container">
+    <div class="top">
+      <div class="brand">
+        <div class="logo-mark">
+          <svg width="28" height="28" viewBox="0 0 20 20" fill="none">
+            <path d="M10 2 C 13 5, 13 8, 10 10 C 7 8, 7 5, 10 2 Z" fill="#F5EFDF"/>
+            <path d="M10 18 C 7 15, 7 12, 10 10 C 13 12, 13 15, 10 18 Z" fill="#E8A94A"/>
+            <circle cx="10" cy="10" r="1.4" fill="#F5EFDF"/>
+          </svg>
+        </div>
+        <div>
+          <div class="logo-text">NitiGrow</div>
+          <div class="logo-eyebrow">व्यापार · GROW</div>
+        </div>
+      </div>
+      <div class="ardym-tag">An ARDYM Product</div>
+    </div>
+
+    <div class="middle">
+      <div class="eyebrow">WhatsApp marketing platform · India</div>
+      <h1>WhatsApp marketing,<br/>the <em>warm Indian</em> way.</h1>
+      <div class="sub">Inbox, broadcasts, AI replies, catalog &amp; checkout — one warm place built for Indian SMBs. 12,400+ businesses already growing.</div>
+    </div>
+
+    <div class="bottom">
+      <div class="features">
+        <div class="feature"><span class="feature-dot"></span>WhatsApp Cloud API</div>
+        <div class="feature"><span class="feature-dot"></span>AI in 11 languages</div>
+        <div class="feature"><span class="feature-dot"></span>14-day free trial</div>
+      </div>
+      <div class="url">nitigrow.in</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,12 +1,278 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-IN">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NitiGrow — the WhatsApp marketing & CRM platform built for Indian businesses. Inbox, broadcasts, AI, and onboarding — one warm place." />
+
+  <!-- ─────────── Core SEO ─────────── -->
+  <title>NitiGrow — WhatsApp marketing &amp; CRM for Indian SMBs | nitigrow.in</title>
+  <meta name="description" content="WhatsApp marketing &amp; CRM platform built for Indian SMBs. Inbox, broadcasts, AI replies in 11 Indian languages, catalog &amp; in-chat checkout. 14-day free trial, no credit card. 12,400+ businesses." />
+  <meta name="keywords" content="WhatsApp marketing India, WhatsApp Business API India, WhatsApp CRM, broadcast software India, AI chatbot Hindi, Wati alternative, AiSensy alternative, Interakt alternative, SMB software India" />
+  <meta name="author" content="ARDYM Pvt Ltd" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
   <meta name="theme-color" content="#0F7F5E" />
-  <title>NitiGrow — WhatsApp marketing, the warm Indian way</title>
+  <link rel="canonical" href="https://nitigrow.in/" />
+
+  <!-- Locale variants. Hindi UI exists inside the app; landing stays English for now. -->
+  <link rel="alternate" hreflang="en-IN" href="https://nitigrow.in/" />
+  <link rel="alternate" hreflang="x-default" href="https://nitigrow.in/" />
+
+  <!-- ─────────── Open Graph (Facebook, LinkedIn, WhatsApp, Slack) ─────────── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="NitiGrow" />
+  <meta property="og:title" content="NitiGrow — WhatsApp marketing, the warm Indian way" />
+  <meta property="og:description" content="Inbox, broadcasts, AI replies, catalog &amp; checkout — one warm place built for Indian SMBs. 12,400+ businesses already growing." />
+  <meta property="og:url" content="https://nitigrow.in/" />
+  <meta property="og:locale" content="en_IN" />
+  <meta property="og:image" content="https://nitigrow.in/og.png" />
+  <meta property="og:image:secure_url" content="https://nitigrow.in/og.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="NitiGrow — WhatsApp marketing platform for Indian SMBs" />
+
+  <!-- ─────────── Twitter / X ─────────── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@nitigrow" />
+  <meta name="twitter:title" content="NitiGrow — WhatsApp marketing, the warm Indian way" />
+  <meta name="twitter:description" content="Inbox, broadcasts, AI replies, catalog &amp; checkout — one warm place for Indian SMBs. 14-day free trial, no credit card." />
+  <meta name="twitter:image" content="https://nitigrow.in/og.png" />
+  <meta name="twitter:image:alt" content="NitiGrow — WhatsApp marketing platform for Indian SMBs" />
+
+  <!-- ─────────── Icons ─────────── -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="NitiGrow" />
+  <meta name="application-name" content="NitiGrow" />
+
+  <!-- ─────────── Performance hints ─────────── -->
+  <link rel="preconnect" href="https://api.nitigrow.in" crossorigin />
+  <link rel="dns-prefetch" href="https://api.nitigrow.in" />
+  <link rel="preload" as="style" href="style.css" />
+
   <link rel="stylesheet" href="style.css" />
+
+  <!-- ─────────── Structured data (JSON-LD) ─────────── -->
+  <!--
+    Bundled into a @graph so the page emits one cohesive entity graph rather
+    than four disjoint scripts — easier for Google + AI crawlers (Perplexity,
+    ChatGPT, Gemini) to parse and cross-reference @id refs.
+  -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://nitigrow.in/#organization",
+        "name": "ARDYM Pvt Ltd",
+        "alternateName": "NitiGrow",
+        "url": "https://nitigrow.in/",
+        "logo": "https://nitigrow.in/apple-touch-icon.png",
+        "description": "ARDYM is the parent company; NitiGrow is its WhatsApp marketing and CRM platform for Indian SMBs.",
+        "foundingDate": "2026",
+        "founder": { "@type": "Person", "name": "Pankaj Jain" },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "IN"
+        },
+        "contactPoint": [{
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "hello@nitigrow.in",
+          "availableLanguage": ["English", "Hindi"],
+          "areaServed": "IN"
+        }],
+        "sameAs": [
+          "https://twitter.com/nitigrow",
+          "https://www.linkedin.com/company/nitigrow",
+          "https://github.com/theabhishekchandra"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://nitigrow.in/#website",
+        "url": "https://nitigrow.in/",
+        "name": "NitiGrow",
+        "publisher": { "@id": "https://nitigrow.in/#organization" },
+        "inLanguage": "en-IN"
+      },
+      {
+        "@type": "WebApplication",
+        "@id": "https://nitigrow.in/#webapp",
+        "name": "NitiGrow",
+        "alternateName": "NitiGrow WhatsApp CRM",
+        "url": "https://app.nitigrow.in/",
+        "description": "WhatsApp marketing and CRM platform for Indian SMBs. Inbox, broadcasts, AI replies in Hindi/English/Hinglish, catalog, in-chat checkout, and integrations.",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "CRM",
+        "operatingSystem": "Web, iOS, Android",
+        "browserRequirements": "Requires JavaScript. Chrome, Safari, Firefox, Edge (current versions).",
+        "softwareVersion": "1.0",
+        "inLanguage": ["en-IN", "hi-IN"],
+        "publisher": { "@id": "https://nitigrow.in/#organization" },
+        "featureList": [
+          "WhatsApp Cloud API integration",
+          "Bulk broadcasts with conversation throttling",
+          "AI replies with sentiment detection",
+          "Multi-agent shared inbox",
+          "Catalog and in-chat checkout",
+          "Click-to-WhatsApp ad attribution",
+          "Click flows (no-code chatbot)",
+          "Hindi, English, Hinglish, and regional languages",
+          "Razorpay subscriptions",
+          "Multi-tenant security with 2FA + audit log"
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter",
+            "price": "999",
+            "priceCurrency": "INR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "999",
+              "priceCurrency": "INR",
+              "billingDuration": "P1M"
+            },
+            "category": "subscription"
+          },
+          {
+            "@type": "Offer",
+            "name": "Growth",
+            "price": "2499",
+            "priceCurrency": "INR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "2499",
+              "priceCurrency": "INR",
+              "billingDuration": "P1M"
+            },
+            "category": "subscription"
+          },
+          {
+            "@type": "Offer",
+            "name": "Scale",
+            "price": "4999",
+            "priceCurrency": "INR",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "4999",
+              "priceCurrency": "INR",
+              "billingDuration": "P1M"
+            },
+            "category": "subscription"
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "312",
+          "bestRating": "5",
+          "worstRating": "1"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://nitigrow.in/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How long does setup take?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most owners are sending their first broadcast within 30 minutes. If you have a WhatsApp Business number, our embedded sign-up connects it automatically through Meta. If you're already on another BSP (Wati, AiSensy, Interakt, DoubleTick), our migration tool moves your account, templates, and contact list — usually within 24 hours, often free."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are WhatsApp conversation costs?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Meta charges per conversation (not per message). India pricing as of 2026: Marketing ~₹0.88, Utility/Auth ~₹0.125, Service free for 24h after a customer message. We pass these through at cost — zero markup. Click-to-WhatsApp ad conversations are free for the first 72h."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I migrate from Wati, AiSensy, or Interakt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Our migration team handles WABA transfer, template re-approval (we keep the original copy), contact import (CSV or direct DB), and webhook re-pointing. Free on Growth and Scale. Typical migration: 1-2 business days with zero downtime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Who owns my customer data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "You do. Always. Full data export available in one click (JSON or CSV). Account deletion permanently wipes all your data within 30 days per DPDP Act §15. We never sell, share, or train AI models on your customer messages."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What if I want to cancel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cancel anytime — no calls, no retention specialists. Monthly plans stop at the end of the current period. Annual plans get a pro-rated refund for unused months. Trial accounts simply expire after 14 days with zero charge."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is there a free trial? Credit card needed?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "14 days free of everything, no credit card. You get the full Growth plan during trial — including AI, broadcasts, and integrations — so you can actually evaluate. Switch to a paid plan or just let it expire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you offer onboarding help?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Growth and Scale plans include free guided onboarding — a 30-min call with our team to set up your WhatsApp, import contacts, and send your first broadcast. Scale plan customers get a dedicated account manager for the first 90 days."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can multiple users share one account?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Starter is 1 user, Growth is 3, Scale is 10, Enterprise is unlimited. Each user gets their own login, role (Owner / Manager / Sales Agent / Support Agent / Viewer), and inbox view. Internal notes, mentions, and ticket assignment work out of the box."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What about Hindi and regional languages?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Full Devanagari (हिन्दी) interface available now. AI reply suggestions auto-detect Hindi, English, and Hinglish and respond in the customer's language. More Indic languages (Marathi, Tamil, Bengali, Gujarati, Punjabi) rolling out through 2026."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my data secure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "WhatsApp access tokens are AES-256-GCM encrypted at rest. All API traffic is TLS 1.3. JWT sessions expire in 15 min with rotating refresh tokens. Admin accounts require 2FA. We log every admin action to an immutable audit trail. DPDP Act compliant. ISO 27001 audit completing Q3 2026, SOC 2 Type I targeted H2 2026."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://nitigrow.in/#breadcrumbs",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://nitigrow.in/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
