@@ -812,6 +812,12 @@
           </div>
 
           <div class="form-msg" id="cf-msg" role="status" aria-live="polite"></div>
+
+          <!-- Honeypot: bots fill every input; humans never see this off-screen field. -->
+          <div aria-hidden="true" style="position:absolute; left:-9999px; top:-9999px; height:0; width:0; overflow:hidden;">
+            <label>Don't fill this — anti-spam<input type="text" name="website" tabindex="-1" autocomplete="off" /></label>
+          </div>
+          <input type="hidden" name="_t" id="cf-ts" value="" />
         </form>
 
         <!-- Methods -->
@@ -1071,6 +1077,13 @@
       const btn = document.getElementById('cf-submit');
       const apiBase = (window.NITIGROW_API_BASE || 'https://api.nitigrow.in').replace(/\/$/, '');
 
+      // Stamp form mount time so the backend can reject submissions filled
+      // in <2 s (almost certainly a bot). Set as late as possible — using
+      // the user's actual interaction would be stronger, but page-mount is
+      // the simplest signal that works for all input methods.
+      const tsField = document.getElementById('cf-ts');
+      if (tsField) tsField.value = String(Date.now());
+
       const buildWaUrl = (data) => {
         const text = `Hi NitiGrow team,
 
@@ -1111,6 +1124,9 @@ ${data.message || ''}`;
           msgEl.innerHTML = 'Thanks! We\'ve got your note. A real human will reply within an hour during business hours. We\'ve also opened WhatsApp in case you want to chat right away.';
           window.open(buildWaUrl(data), '_blank', 'noopener');
           contactForm.reset();
+          // After reset, restamp the timestamp so a quick second submission
+          // isn't rejected by the <2s anti-bot rule.
+          if (tsField) tsField.value = String(Date.now());
         } catch (_err) {
           // Backend endpoint not wired yet — fall back to WhatsApp with prefilled message.
           msgEl.className = 'form-msg ok';
